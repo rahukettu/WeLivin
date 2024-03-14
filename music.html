@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/custom.css">
+    <script src="https://kit.fontawesome.com/e3e84f2a76.js" crossorigin="anonymous"></script>
+    <title>WeLivin</title>
+  </head>
+  <body>
+    <header>
+        <img class="logo" src="images/logoWL.png"></img>
+        <ul class="nav">
+            <li class="navlink"><a href="index.html">Home</a></li>
+            <li class="navlink"><a href="music.html">Music</a></li>
+            <li class="navlink"><a href="projects.html">Projects</a></li>
+        <ul>
+    </header>
+    <main>
+        <h3 class="title">Enter search keyword</h3> 
+        <div class="music-finder">
+            <form id="searchform" action="" method="GET" class="search-params">
+                <ul>
+                    <li>
+                  <label for="artist">Artist</label>
+                    <input type="artist" id="artist" name="artist" default=""/>
+                  </li>
+                  <li>
+                  <label for="album">Album</label>
+                  <input type="album" id="album" name="album" default="" />
+                </li>
+                <li>
+                    <label for="tag">Tag</label>
+                    <input type="tag" id="tag" name="tag" default="" />
+            </li>
+         
+      <li class="button">
+        <button type="submit">Go</button>
+    </li>
+    </ul>
+              </form>
+             </div>
+            
+              <div class="search-result">
+                <table id="resultTable">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Website</th>
+                        <th>Joindate</th>
+                        <th>ShortURL</th>
+                        <th>ShareURL</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      
+                      </tbody>
+                   
+                </table>
+            </div>
+        </div>
+
+    </main>
+        <footer class="flex">
+            <div class="footer-content-top">
+                <div class="footer-col">
+                    <h2 class="title">WeLivin</h2> 
+                        <h5 class="undertitle">- With Us You Pass With Flying Colors - </h5>
+                </div>
+
+
+                <div class="footer-col">
+                    <h5>About US</h5>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contacts</a></li>
+                </div>
+                <div class="footer-col">
+                <h5>Links</h5>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">International</a></li>
+            </div>
+            <div class="footer-col">
+            <h5>Follow Us in Social Media</h5>
+            <div class="social">
+               <p><i class="fa-brands fa-facebook"><a href=#></a></i></p>
+               <p><i class="fa-brands fa-instagram"><a href="#"></a></i></p>
+               <p><i class="fa-brands fa-youtube"><a href="#"></a></i></p>
+            </div>
+            </div>
+        </div>
+        <div class=""footer-content-bottom">
+            <hr class="foot-hr"></hr>
+        <div id="copyright">
+                <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script></span>
+            </div>
+        </div>
+        </footer> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+	<script src="./js/index.js"></script>
+  </body>
+</html>
